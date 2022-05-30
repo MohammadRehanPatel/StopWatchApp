@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1D2247"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StopWatch"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="#4BD6E6"
+        android:textSize="50dp"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        />
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border"
+        android:textColor="#378B95"
+
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="onClickStart"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:background="@drawable/border2"
+        android:textColor="#51A5AE"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="onClickStop"
+        android:textColor="#51A5AE"
+        android:background="@drawable/border2"
+        android:textSize="30dp"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickReset"
+        android:textColor="#51A5AE"
+        android:background="@drawable/border2"
+        android:textSize="30dp"
+        android:text="Reset" />
+</LinearLayout>
